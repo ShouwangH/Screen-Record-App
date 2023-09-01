@@ -1,0 +1,16 @@
+{
+    "name": "ScreenRec Pro",
+    "version": "1.0.0",
+    "description": "Easily record your screen and download to your computer. Allow you to record windows, browser tabs, or your entire screen",
+    "manifest_version": 3,
+    "icons": {
+        "128": "icons/icon128.png",
+        "48": "icons/icon48.png",
+        "32": "icons/icon32.png"
+    },
+    "author": "Shouwang Huang",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "ScreenRec Pro"
+    }
+}
