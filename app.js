@@ -7,12 +7,21 @@ const chunks = [];
 // Function to start capturing the screen
 async function startCapture(displayMediaOptions) {
   let captureStream = null;
+  document.getElementsByClassName("container")[0].style.width = "620px"
+  document.getElementsByClassName("container")[0].style.height = "300px"
+  document.getElementsByClassName("container")[0].style.transform = "translate(-50%, 10%);"
 
   try {
     captureStream = await navigator.mediaDevices.getDisplayMedia(displayMediaOptions);
   } catch (err) {
     console.error(`Error: ${err}`);
   }
+
+  document.getElementsByClassName("container")[0].style.width = "160px"
+  document.getElementsByClassName("container")[0].style.height = "40px"
+  document.getElementsByClassName("container")[0].style.transform = "translate(-45%, 90%);"
+
+
   return captureStream;
 }
 
